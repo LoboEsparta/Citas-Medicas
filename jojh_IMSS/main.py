@@ -1,3 +1,4 @@
+
 print(""""
 
 ¿Que desea hacer? 
@@ -7,15 +8,15 @@ print(""""
       --- Agendar Cita Medica      
       """)
 
-
 accion = input("Escriba su solicitud: ")
 
-if accion == "Registrar Doctor": 
+
+if accion == "2":
+    import Doc.registroDoc as registroDoc
     registroDoc.Registro()
 
-elif accion == "Agendar Cita Medica":
-      registroDoc
+elif accion == "1":
+    import Usu.registroUsu as registroUsu
+    registroUsu.RegistroU()
+    
 
-
-import registroDoc
-#hazEL = registroDoc.Registro()
